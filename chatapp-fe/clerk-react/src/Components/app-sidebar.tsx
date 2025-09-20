@@ -84,7 +84,7 @@ export function AppSidebar() {
                     </SidebarMenuButton>
                   </SidebarMenuItem>
                 ))) :
-                  (<div className="text-white">No rooms are found yet</div>)
+                  (<div className="text-green-500">No rooms are found yet</div>)
                 }
 
               </SidebarMenu>

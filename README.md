@@ -16,5 +16,19 @@
 
 ---
 
-## 📂 Folder Structure
+## Screenshots
+
+### 1. Homepage Screen
+![Login Screen](./screenshots/homepageui.png)  
+this si the landing page of darkcomms website .
+
+### 2. Chat Interface
+![Chat UI](./screenshots/chatareaui.png)  
+This is the main chat interface where users can send and receive messages in real-time.
+
+
+### 3. Animations
+![Animation Example](./screenshots/roompage.png)  
+this is the room interface where user ka create a room or join the room by entering the roomid .
+
 
