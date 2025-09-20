@@ -5,7 +5,7 @@ import { ClerkProvider } from '@clerk/clerk-react'
 
 // Import your Publishable Key
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
-const url="/"
+const url = "/"
 
 if (!PUBLISHABLE_KEY) {
   throw new Error('Add your Clerk Publishable Key to the .env file')
@@ -13,12 +13,19 @@ if (!PUBLISHABLE_KEY) {
 
 createRoot(document.getElementById('root')!).render(
 
-  <ClerkProvider 
-  publishableKey={PUBLISHABLE_KEY} 
-  signInForceRedirectUrl= {url}
-  signUpForceRedirectUrl= {url} 
-  afterSignOutUrl= {url}
->
-<App />
-      </ClerkProvider >,
+  <ClerkProvider
+    publishableKey={PUBLISHABLE_KEY}
+    appearance={{
+      elements: {
+        userButtonPopoverCard: {
+          zIndex: 9999,
+        },
+      },
+    }}
+    signInForceRedirectUrl={url}
+    signUpForceRedirectUrl={url}
+    afterSignOutUrl={url}
+  >
+    <App />
+  </ClerkProvider >,
 )

@@ -7,12 +7,7 @@ export default function LandingStats() {
 
     useEffect(() => {
         // Replace with your backend stats endpoint if available
-        axios.get("http://localhost:8080/api/auth/stats").then(res => {
-            if (res.data.success) setStats(res.data.stats);
-        }).catch(() => {
-            // fallback demo stats
             setStats({ users: 42, rooms: 7, messages: 1337 });
-        });
     }, []);
 
     return (

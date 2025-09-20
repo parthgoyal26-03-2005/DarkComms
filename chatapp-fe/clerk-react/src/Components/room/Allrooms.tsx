@@ -201,7 +201,7 @@ export const Allrooms = () => {
             </div>
 
             {/* ✅ Input Row */}
-            <div className="w-full flex sticky items-center px-2 sm:px-4 py-2 sm:py-3 gap-2 sm:gap-3 bg-black border-t border-[#2f2c2c]">
+            <div className="w-full flex  items-center px-2 sm:px-4 py-2 sm:py-3 gap-2 sm:gap-3 bg-black border-t border-[#2f2c2c]">
               <Input
                 id="message"
                 type="text"
