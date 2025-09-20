@@ -1,7 +1,6 @@
 import { Button } from "@/Components/ui/button"
 import {
   Card,
-  CardAction,
   CardContent,
   CardDescription,
   CardFooter,
@@ -56,7 +55,8 @@ export const Joinroom=({openpopup ,setpopupopen }:props)=> {
     sendmessage({type:"join",roomId:roomid,userid:userid});
   
     }
-  return (
+  return (<>
+    {openpopup && (
        <div  className=" w-full max-w-md dark absolute z-40 left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
 <ElectricBorder
   color="#5FA34D"
@@ -102,5 +102,7 @@ export const Joinroom=({openpopup ,setpopupopen }:props)=> {
     </Card>
     </ElectricBorder>
     </div>
+    )}
+    </>
   )
 }

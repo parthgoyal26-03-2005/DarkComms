@@ -1,10 +1,9 @@
 import LandingFlow from "./LandingFlow";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { SignedIn, SignedOut, SignInButton, UserButton, useUser } from '@clerk/clerk-react';
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import TextType from "./TextType";
-import GlitchText from "./GlitchText";
 import DecryptedText from "./DecryptedText";
 import CircularText from "./CircularText";
 import LandingStats from "./LandingStats";

@@ -1,4 +1,4 @@
-import React from 'react'
+
 interface prop{
   username:string,
   messg:string

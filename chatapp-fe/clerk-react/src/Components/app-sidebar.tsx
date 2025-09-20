@@ -14,7 +14,7 @@ import {
 import { useEffect, useState } from "react"
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
+import { SignedIn,  UserButton } from "@clerk/clerk-react";
 import BlurText from "./BlurText";
 import DecryptedText from "./DecryptedText";
 

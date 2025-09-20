@@ -1,5 +1,4 @@
-import React from 'react'
-import DecryptedText from '../DecryptedText'
+
 
 interface prop {
   username: string,
