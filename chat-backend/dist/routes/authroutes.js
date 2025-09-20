@@ -1,7 +1,6 @@
 import Router from "express";
 import Userschema from "../models/user.js";
 import Roomschema from "../models/room.js";
-import message from "../models/message.js";
 const router = Router();
 router.post("/signin", async (req, res) => {
     const { clerkId, email, name } = req.body;

@@ -1,4 +1,4 @@
-import { WebSocketServer, WebSocket } from "ws";
+import { WebSocketServer } from "ws";
 import message from "../models/message.js";
 import room from "../models/room.js";
 import { randomUUID } from "crypto";
