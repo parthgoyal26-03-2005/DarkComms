@@ -36,7 +36,7 @@ export function AppSidebar() {
 
     const userid = localStorage.getItem("user");
     try {
-      const response = await axios.get("http://localhost:8080/api/auth/rooms", {
+      const response = await axios.get(`${import.meta.env.VITE_HTTP_API_URL}/api/auth/rooms`, {
         params: { userid: userid }
       })
       if (response.data.success) {

@@ -41,7 +41,7 @@ export const Homepage = () => {
                 name: user.fullName,
             }
 
-            const response = await axios.post("http://localhost:8080/api/auth/signin", data);
+            const response = await axios.post(`${import.meta.env.VITE_HTTP_API_URL}/api/auth/signin`, data);
             if (response.data.success) {
                 navigate("/chat-room");
             }

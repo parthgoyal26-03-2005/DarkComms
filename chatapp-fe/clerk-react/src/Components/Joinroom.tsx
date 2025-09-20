@@ -29,7 +29,7 @@ export const Joinroom=({openpopup ,setpopupopen }:props)=> {
   const userid=localStorage.getItem("user");  
     const navigate=useNavigate();
     
-    const {sendmessage}=useSocket("ws://localhost:8080",(data)=>{
+    const {sendmessage}=useSocket(`${import.meta.env.VITE_WS_API_URL}`,(data)=>{
   
       if(data.type2=="Roomjoined"){
         setid(data.roomid);

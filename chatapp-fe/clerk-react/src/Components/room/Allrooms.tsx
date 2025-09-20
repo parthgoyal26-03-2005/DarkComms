@@ -26,7 +26,7 @@ export const Allrooms = () => {
   const userid = localStorage.getItem("user")
   const username = localStorage.getItem("firstname")
   const { isSignedIn, isLoaded } = useUser();
-  const { sendmessage, ready } = useSocket("ws://localhost:8080", (ev) => {
+  const { sendmessage, ready } = useSocket(`${import.meta.env.VITE_WS_API_URL}`, (ev) => {
 
     try {
       if (ev.type == "history") {
@@ -63,7 +63,7 @@ export const Allrooms = () => {
 
   const findroomname = async () => {
     try {
-      const response = await axios.get("http://localhost:8080/api/auth/roomname", {
+      const response = await axios.get(`${import.meta.env.VITE_HTTP_API_URL}/api/auth/roomname`, {
         params: { roomid: id }
       });
       if (response.data.success) {

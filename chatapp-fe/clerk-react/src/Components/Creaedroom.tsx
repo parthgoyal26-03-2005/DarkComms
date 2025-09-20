@@ -26,7 +26,7 @@ export const Creaedroom=({openpopup ,setpopupopen }:props)=> {
   const userid=localStorage.getItem("user");  
   const [roomname,setroomname]=useState<string>("");
   const [id,setid] =useState<string>("");
-  const {sendmessage}=useSocket("ws://localhost:8080",(data)=>{
+  const {sendmessage}=useSocket(`${import.meta.env.VITE_WS_API_URL}`,(data)=>{
     
     if(data.type=="roomCreated"){
       setid(data.roomId);
