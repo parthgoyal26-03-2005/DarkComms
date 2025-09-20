@@ -9,7 +9,7 @@
     "target": "ES2020",
     "moduleResolution": "nodenext",
     "lib": ["ES2020"],
-    "types": ["node"],   // 👈 Add this to include Node.js built-in types
+    "types": ["node"],  
 
     // Other Outputs
     "sourceMap": true,
